@@ -1,10 +1,10 @@
 package bank;
 
-import bank.security.domain.entities.BankAccount;
-import bank.security.domain.entities.User;
-import bank.security.repositories.UserRepository;
-import bank.security.service.TransferService;
-import bank.security.service.UserService;
+import bank.domain.entities.BankAccount;
+import bank.domain.entities.User;
+import bank.repositories.UserRepository;
+import bank.service.TransferService;
+import bank.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

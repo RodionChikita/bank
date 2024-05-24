@@ -1,3 +1,12 @@
+springdoc:
+
+  api-docs:h: /docs
+    
+    pat
+  swagger-ui:
+    filter: true
+    tryItOutEnabled: true
+    path: /swagger
 spring:
   application:
     name: security-security
