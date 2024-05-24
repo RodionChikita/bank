@@ -37,7 +37,7 @@ public class User implements UserDetails {
     @Column(name = "birth_date", nullable = false)
     private Date birthDate;
 
-    @OneToMany(mappedBy="user", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy="user", cascade = CascadeType.ALL)
     private Set<Email> emails;
 
     @OneToMany(mappedBy="user", cascade = CascadeType.ALL)

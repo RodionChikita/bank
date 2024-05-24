@@ -1,6 +1,5 @@
 package bank.security.service;
 
-import bank.security.domain.entities.Email;
 import bank.security.domain.entities.Phone;
 import bank.security.domain.entities.User;
 import bank.security.repositories.PhoneRepository;

@@ -3,15 +3,10 @@ package bank.security.service;
 import bank.security.domain.entities.Email;
 import bank.security.domain.entities.User;
 import bank.security.repositories.EmailRepository;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-import java.util.Set;
-
-import static bank.security.config.JwtAuthenticationFilter.BEARER_PREFIX;
-import static bank.security.config.JwtAuthenticationFilter.HEADER_NAME;
 
 @Service
 @RequiredArgsConstructor

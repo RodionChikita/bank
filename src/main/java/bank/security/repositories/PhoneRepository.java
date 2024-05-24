@@ -1,6 +1,5 @@
 package bank.security.repositories;
 
-import bank.security.domain.entities.Email;
 import bank.security.domain.entities.Phone;
 import bank.security.domain.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
