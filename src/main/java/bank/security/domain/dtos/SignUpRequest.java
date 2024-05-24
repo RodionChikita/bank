@@ -30,8 +30,21 @@ public class SignUpRequest {
     @Schema(description = "Пароль", example = "my_1secret1_password")
     @Size(max = 255, message = "Длина пароля должна быть не более 255 символов")
     private String password;
+
+    @Schema(description = "ФИО", example = "Ivanov Ivan Ivanovich")
+    @Size(min = 5, max = 255, message = "ФИО должен содержать от 5 до 255 символов")
+    @NotBlank(message = "ФИО не может быть пустыми")
     private String fullName;
+
+    @Schema(description = "Дата рождения", example = "2005-10-16")
+    @NotBlank(message = "Дата рождение не может быть пустой")
     private Date birthDate;
+
+    @Schema(description = "Номер телефона", example = "84342214550")
+    @NotBlank(message = "Телефон не может быть пустыми")
     private String phone;
+
+    @Schema(description = "Количество денег на счете", example = "100000")
+    @NotBlank(message = "Количество денег на счете не может быть пустыми")
     private Long amount;
 }
